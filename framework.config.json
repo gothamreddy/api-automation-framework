@@ -1,0 +1,19 @@
+{
+  "projectName": "api-automation-framework",
+  "environments": ["qa", "stage", "val"],
+  "defaultEnv": "qa",
+  "envAliases": {
+    "staging": "stage",
+    "validation": "val"
+  },
+  "services": {
+    "api": "BASE_URL",
+    "auth": "AUTH_BASE_URL"
+  },
+  "mockServer": {
+    "enabledEnv": "START_MOCK_AUTH",
+    "command": "node tests-support/auth-server/server.mjs",
+    "urlEnv": "AUTH_BASE_URL",
+    "healthPath": "/health"
+  }
+}

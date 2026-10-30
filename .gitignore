@@ -1,0 +1,15 @@
+.cursor/
+node_modules/
+.features-gen/
+test-results/
+playwright-report/
+allure-results/
+allure-report/
+.env*
+!.env.example
+!.env.qa
+!.env.stage
+!.env.val
+dist/
+*.log
+.DS_Store
